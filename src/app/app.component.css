@@ -1,0 +1,67 @@
+
+::ng-deep :root {
+  --container-padding: 16px;
+  --label-font-size: 12px;
+}
+
+h4 {
+  margin: 0;
+  padding: 0;
+}
+input {
+  border: none;
+  border-bottom: 2px solid blueviolet
+}
+input:focus {
+  outline-color: #be9ddc;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5vw;
+}
+.container > div {
+  flex: 1;
+}
+
+.input-type-container {
+  border: 1px solid silver;
+  margin-bottom: 1rem;
+}
+.input-type-container > h4{
+  background: rgb(230, 229, 229);
+  padding: .5rem 1rem;
+  box-shadow: 0px 1px 4px rgb(133, 166, 228);
+  background: rgba(100, 149, 237, .1);
+}
+.input-type-container > div{
+  padding: var(--container-padding);
+}
+
+.input-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.input-row {
+  position: relative;
+}
+.input-row > label {
+  position: absolute;
+  font-size: var(--label-font-size);
+  /* left: calc(var(--container-padding) + 2px); */
+  left: 2px;
+}
+.input-row > input {
+  padding-top: 5px;
+  padding-bottom: 0;
+  height: 2rem;
+}
+
+@media print {
+  .no-print {
+    display: none;
+  }
+}
