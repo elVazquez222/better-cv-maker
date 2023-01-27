@@ -1,5 +1,14 @@
 # BetterCvMaker
 
+This cv-maker specially targets for developers who want to point out the skills they developed during there education and their work experience.
+
+Simply use the form elements to fill your cv.
+
+Once you are done hit the print shortcut of the browser (e.g. ctrl+p) and choose "print to pdf".
+
+Make sure you uncheck the header and footer in the printing options to have a clean result.
+___________
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.1.
 
 ## Development server
