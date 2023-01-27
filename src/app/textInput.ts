@@ -1,5 +1,5 @@
 export interface TextInput {
-  label: string, // unique
   type: string,
+  label: string, // unique
   value: string
 }

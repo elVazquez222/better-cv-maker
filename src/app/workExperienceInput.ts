@@ -1,7 +1,12 @@
+interface Skill {
+  name: string,
+  color: string
+}
+
 export interface WorkExperienceInput {
-  label: string,
+  type: string,
+  time: string, //unique
   title: string,
   description: string,
-  time: string,
-  appliedSkills: Array<String>
+  appliedSkills: Array<Skill>
 }

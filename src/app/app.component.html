@@ -8,6 +8,7 @@
 
 <div class="container">
   <div class="inputs no-print">
+
     <div class="input-type-container">
       <h4>Personal Info</h4>
       <div class="input-group">
@@ -19,13 +20,36 @@
         </div>
       </div>
     </div>
+
     <div class="input-type-container">
       <h4>Work Experience</h4>
-      <div class="input-group">
-        <div *ngFor="let input of inputs">
+      <div *ngFor="let input of workExperienceInputs; index as i">
+        <h5>Work Experience #{{i}}</h5>
+        <div class="input-group">
           <div class="input-row">
-            <label [for]="input.label">{{input.label}}</label>
-            <input [type]="input.type" [(ngModel)]="input.value" />
+            <label [for]="input.title">Title</label>
+            <input [type]="input.type" [(ngModel)]="input.title" />
+          </div>
+          <div class="input-row">
+            <label [for]="input.description">description</label>
+            <input [type]="input.type" [(ngModel)]="input.description" />
+          </div>
+          <div class="input-row">
+            <label [for]="input.time">time</label>
+            <input [type]="input.type" [(ngModel)]="input.time" />
+          </div>
+        </div>
+        <div class="skills-in-work-experience" *ngFor="let skill of input.appliedSkills">
+          <div class="input-group">
+            <div class="input-row">
+              <div>{{skill.name}}</div>
+            </div>
+            <div class="input-row">
+              <div>{{skill.name}}</div>
+            </div>
+            <div class="input-row">
+              <div>{{skill.name}}</div>
+            </div>
           </div>
         </div>
       </div>

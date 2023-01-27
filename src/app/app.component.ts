@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { TextInput } from './textInput';
+import { WorkExperienceInput } from './workExperienceInput'
 
 @Component({
   selector: 'app-root',
@@ -15,12 +16,13 @@ export class AppComponent {
     { label: "LinkedIn", type: "text", value: "" },
     { label: "website", type: "text", value: "" },
   ];
-  workExperienceInputs: Array<WorkExperienceInput> = [
-    { label: "Name", type: "text", value: "" },
-    { label: "Adresse", type: "text", value: "" },
-    { label: "Phone", type: "text", value: "" },
-    { label: "LinkedIn", type: "text", value: "" },
-    { label: "website", type: "text", value: "" },
+  workExperienceInputs: Array<WorkExperienceInput> = [{
+    type: 'text',
+    title: '',
+    description: '',
+    time: '',
+    appliedSkills: [{ name: 'js', color: 'red' }]
+  }
   ];
 
   newTextInput: TextInput = {
@@ -30,6 +32,6 @@ export class AppComponent {
   }
 
   addInput(): void {
-    this.inputs = [...this.inputs, this.newTextInput];
+    // this.inputs = [...this.inputs, this.newTextInput];
   }
 }

@@ -3,3 +3,10 @@
   height: 976px;
   border: 2px solid black;
 }
+
+
+@media print {
+  .preview {
+    border: none;
+  }
+}
