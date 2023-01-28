@@ -99,13 +99,13 @@ header {
 
 .skillChip {
   border-radius: 10px;
-  border: 1px dashed goldenrod;
+  border: 1px solid goldenrod;
   padding: 2px 4px;
   font-size: 10px;
 }
 
 .workExperienceList {
-  padding: 2rem 0 0 5rem;
+  padding: 2rem 0 0 4.5rem;
 }
 
 .skillsRow {
@@ -118,8 +118,9 @@ header {
   position: relative;
   margin-top: 1.5rem;
   padding-bottom: 1rem;
-  background: aliceblue;
-  padding: 6px;
+  background: #0c4444d1;
+  color: white;
+  padding: 12px 8px;
   font-size: 12px;
   min-height: 131px;
 }
@@ -127,16 +128,17 @@ header {
 .workExperienceHeader {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 20px;
   flex-wrap: wrap;
 
   margin-left: -4.5rem;
-  /* border: 1px solid rgb(218, 165, 32); */
-  /* border: 1px solid dimgrey; */
-  /* background: aliceblue; */
   border-bottom: none;
   padding: 8px;
   font-size: 16px;
+  background: #00000099;
+  border-radius: 14px;
+  margin-bottom: 10px
 }
 
 .workExperienceHeader > div > span {
@@ -153,15 +155,14 @@ header {
   top: 0;
   left: -2rem;
   content: '';
-  height: 2px;
+  /* height: 2px; */
   width: 100%;
-  background: goldenrod;
   box-shadow: -2px 1px 5px goldenrod;
   box-shadow: -2px 1px 5px dimgrey;
 }
 
 .workExpLcation {
-  color: goldenrod;
+  color: gold;
 }
 
 .workExpTime {
@@ -171,13 +172,16 @@ header {
   left: -30px;
   font-size: 12px;;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: dimgray;
 }
 
 .workExpDescription {
-  font-size: 14px;
+  font-size: 13px;
+  line-height: 1.6;
   padding-top: 5px;
   padding-right: 5px;
   font-family: 'Rajdhani', sans-serif;
+  font-family: 'Nanum Myeongjo', serif;
 }
 
 @media print {
