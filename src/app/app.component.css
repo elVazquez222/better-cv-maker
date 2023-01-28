@@ -10,10 +10,15 @@ h4 {
 }
 input {
   border: none;
-  border-bottom: 2px solid blueviolet
+  border-bottom: 2px solid blue;
 }
 input:focus {
   outline-color: #be9ddc;
+}
+
+.hint {
+  padding: 1rem;
+  font-size: 12px;
 }
 
 .container {
@@ -58,6 +63,14 @@ input:focus {
   padding-top: 5px;
   padding-bottom: 0;
   height: 2rem;
+}
+
+.skillList {
+  width: 400px;
+}
+
+.addWorkExpBtn {
+  margin: 2rem 1rem;
 }
 
 @media print {

@@ -10,6 +10,19 @@
   <div class="inputs no-print">
 
     <div class="input-type-container">
+      <h4>Professional Info</h4>
+      <span class="hint"><i class="fa-solid fa-circle-info"></i>add skills seperated by space</span>
+      <div class="input-group">
+        <div *ngFor="let input of professionalInfoInputs">
+          <div class="input-row">
+            <label [for]="input.label">{{input.label}}</label>
+            <input [type]="input.type" [(ngModel)]="input.value" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="input-type-container">
       <h4>Personal Info</h4>
       <div class="input-group">
         <div *ngFor="let input of personalInfoInputs">
@@ -23,36 +36,34 @@
 
     <div class="input-type-container">
       <h4>Work Experience</h4>
-      <div *ngFor="let input of workExperienceInputs; index as i">
-        <h5>Work Experience #{{i}}</h5>
+      <div *ngFor="let workExperience of workExperienceEntries; index as i">
+        <h5>Work Experience #{{i+1}}</h5>
         <div class="input-group">
           <div class="input-row">
-            <label [for]="input.title">Title</label>
-            <input [type]="input.type" [(ngModel)]="input.title" />
+            <label [for]="workExperience.title">Title</label>
+            <input [type]="workExperience.type" [(ngModel)]="workExperience.title" />
           </div>
           <div class="input-row">
-            <label [for]="input.description">description</label>
-            <input [type]="input.type" [(ngModel)]="input.description" />
+            <label [for]="workExperience.description">description</label>
+            <input [type]="workExperience.type" [(ngModel)]="workExperience.description" />
           </div>
           <div class="input-row">
-            <label [for]="input.time">time</label>
-            <input [type]="input.type" [(ngModel)]="input.time" />
+            <label [for]="workExperience.time">time</label>
+            <input [type]="workExperience.type" [(ngModel)]="workExperience.time" />
           </div>
         </div>
-        <div class="skills-in-work-experience" *ngFor="let skill of input.appliedSkills">
-          <div class="input-group">
-            <div class="input-row">
-              <div>{{skill.name}}</div>
-            </div>
-            <div class="input-row">
-              <div>{{skill.name}}</div>
-            </div>
-            <div class="input-row">
-              <div>{{skill.name}}</div>
-            </div>
-          </div>
+        <br />
+        <div>
+          <label for="skillList">add applied skills seperated by space</label>
+          <br />
+          <input type="text" name="skillList" class="skillList"
+            (change)="updateSkills($event.target.value, workExperience.title, workExperience.time)"
+          />
         </div>
+        <br />
+        <hr />
       </div>
+      <button class="addWorkExpBtn" (click)="addWorkExperienceEntry()">+</button>
     </div>
   </div>
   <div><app-preview></app-preview></div>
