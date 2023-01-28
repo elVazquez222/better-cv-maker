@@ -56,12 +56,12 @@ header {
 .languages {
   display: flex;
   justify-content: center;
-  gap: 4px;
+  gap: 6px;
   margin-top: 1rem;
 }
 
 .languages > img {
-  max-height: 15px;
+  max-height: 12px;
 }
 
 .languagesIcon {
