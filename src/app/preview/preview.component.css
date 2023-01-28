@@ -1,7 +1,6 @@
 .preview {
   width: 684px;
   height: 976px;
-  /* border: 2px solid black; */
 }
 
 h1 {
@@ -9,13 +8,21 @@ h1 {
   margin: 0;
 }
 
-header {
+h4 {
+  font-family: monospace;
+}
 
-  /* background: rgb(5, 43, 86); */
-  border: 1px solid rgb(5, 43, 86);
-  color: goldenrod;
+header {
+  background: dimgrey;
+  background: rgb(105 24 44);
+  border: 1px solid antiquewhite;
+  color: antiquewhite;
   border-radius: 10px;
   padding: 2rem 1rem 1rem 1rem;
+}
+
+.hilightedTextColor {
+  color: goldenrod;
 }
 
 .headerMain {
@@ -25,7 +32,6 @@ header {
 }
 
 .jobTitle {
-  /* color: white; */
   position: relative;
   text-align: center;
 }
@@ -45,13 +51,17 @@ header {
 }
 
 .languages > img {
-  max-height: 14px;
+  max-height: 15px;
+}
+
+.languagesIcon {
+  margin-right: 6px;
 }
 
 .availability, .location {
   font-size: 12px;
   text-align: center;
-  color: rgb(5, 43, 86);
+  color: rgb(250, 235, 215);
 }
 
 .skillsOverview {
@@ -81,7 +91,66 @@ header {
   border-radius: 10px;
   border: 1px dashed goldenrod;
   padding: 2px 4px;
+  font-size: 11px;
+}
+
+.workExperienceList {
+  padding: 2rem 0 0 2rem;
+}
+
+.skillsRow {
+  display: flex;
+  gap: 6px;
+  justify-content: flex-end;
+}
+
+.workExperienceElement {
+  position: relative;
+  margin-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.workExperienceHeader {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+
+  margin-left: -2rem;
+  border: 1px solid rgb(218, 165, 32);
+  border: 1px solid dimgrey;
+  border-bottom: none;
+  padding: 8px;
+}
+
+.workExperienceHeader > div > span {
   font-size: 14px;
+  background: rgba(250, 235, 215,.5);
+  border: 1px solid goldenrod;
+  border-radius: 50px;
+  padding: 2px 4px;
+  font-size: 9px;
+  font-family: monospace;
+  display: flex;
+  align-items: center;
+}
+.workExperienceHeader::after {
+  position: absolute;
+  top: 0;
+  left: -2rem;
+  content: '';
+  width: 2px;
+  height: 100%;
+  background: goldenrod;
+  box-shadow: -2px 1px 5px goldenrod;
+  box-shadow: -2px 1px 5px dimgrey;
+}
+
+.workExpDescription {
+  font-size: 13px;
+  padding-top: 5px;
+  padding-right: 5px;
+  font-family: monospace;
 }
 
 @media print {

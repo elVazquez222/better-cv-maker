@@ -11,6 +11,7 @@ export class PreviewComponent implements OnInit {
   @Input() professionalInfo: Array<TextInput> = [];
   @Input() workExperienceEntries: Array<WorkExperienceEntry> = [];
 
+  // professional info
   jobTitle = null;
   jobSubTitle = null;
   experienceInYears = null;
@@ -21,6 +22,9 @@ export class PreviewComponent implements OnInit {
   furtherSkills = null;
   languages = null;
 
+  // work experience
+  workExperience = null;
+
   ngOnInit() {
     this.jobTitle = this.professionalInfo.filter(info => info.label === "Job Title")[0];
     this.jobSubTitle = this.professionalInfo.filter(info => info.label === "Job Subtitle")[0];
@@ -28,8 +32,14 @@ export class PreviewComponent implements OnInit {
     this.availableFrom = this.professionalInfo.filter(info => info.label === "Availability (time)")[0];
     this.availableAt = this.professionalInfo.filter(info => info.label === "Availability (place)")[0];
     this.wouldMoveTo = this.professionalInfo.filter(info => info.label === "Would move to")[0];
-    this.skillsWithExperience = this.professionalInfo.filter(info => info.label === "Skills With Experience")[0].value.split(" ");
-    this.furtherSkills = this.professionalInfo.filter(info => info.label === "Further Skills")[0].value.split(" ");
+    this.skillsWithExperience = this.professionalInfo.filter(info => info.label === "Skills With Experience")[0].value.split(",");
+    this.furtherSkills = this.professionalInfo.filter(info => info.label === "Further Skills")[0].value.split(",");
     this.languages = this.professionalInfo.filter(info => info.label === "Languages")[0];
+
+    this.workExperience = this.workExperienceEntries.map(entry => {
+      return { ...entry, skills: entry.skills.split(",") }
+    });
+
+
   }
 }

@@ -2,34 +2,35 @@
   <header>
     <div class="headerMain">
       <div class="location">
-        located in
+        currently in
         {{availableAt.value}} <br />
-        <span *ngIf="wouldMoveTo.value !== ''">reday to move to</span> <br />
-        {{wouldMoveTo.value}}
+        <span *ngIf="wouldMoveTo.value !== ''">would work in:</span> <br />
+        <span class="hilightedTextColor">{{wouldMoveTo.value}}</span>
       </div>
       <div class="jobTitle">
         <h1>{{jobTitle.value}}</h1>
         <span>{{jobSubTitle.value}}</span>
-        <span *ngIf="experienceInYears.value !== ''" class="experinceTime">{{experienceInYears.value}} yrs</span>
+        <span *ngIf="experienceInYears.value !== ''" class="experinceTime hilightedTextColor">{{experienceInYears.value}} yrs</span>
       </div>
       <div class="availability">
         available from <br />
-        {{availableFrom.value}} <br />
+        <span class="hilightedTextColor">{{availableFrom.value}}</span> <br />
         or by arrangement
       </div>
     </div>
     <div class="languages">
-      <img src="https://cdn-icons-png.flaticon.com/512/1246/1246297.png" />
+      <img class="languagesIcon" src="https://cdn-icons-png.flaticon.com/512/1246/1246297.png" />
       <img *ngIf="languages.value.includes('de')" src="https://flagicons.lipis.dev/flags/4x3/de.svg" />
       <img *ngIf="languages.value.includes('us') || languages.value.includes('en')" src="https://flagicons.lipis.dev/flags/4x3/us.svg" />
       <img *ngIf="languages.value.includes('es')" src="https://flagicons.lipis.dev/flags/4x3/es.svg" />
       <img *ngIf="languages.value.includes('fr')" src="https://flagicons.lipis.dev/flags/4x3/fr.svg" />
     </div>
   </header>
+
   <main>
     <div class="skillsOverview">
       <div class="experiencedSkills">
-        <h4>Hands On Work Experince Skills</h4>
+        <h4>Hands On Work Experience with</h4>
         <div class="skillBlock">
           <span class="skillChip" *ngFor="let skill of skillsWithExperience">
             {{skill}}
@@ -45,7 +46,31 @@
         </div>
       </div>
     </div>
+
+    <div class="workExperienceList">
+      <div *ngFor="let exp of workExperience" class="workExperienceElement">
+        <div class="workExperienceHeader">
+          <div class="workExpTitle">
+            {{exp.title}}
+          </div>
+          <div class="skillsRow">
+            <span *ngFor="let skill of exp.skills" >{{skill}}</span>
+          </div>
+        </div>
+        <div class="workExpTimeAndLocation">
+          {{exp.location}} <br /> {{exp.time}}
+        </div>
+        <div class="workExpDescription">
+          {{exp.description}}
+        </div>
+
+      </div>
+    </div>
   </main>
+
+  <footer>
+
+  </footer>
 
 
 </div>

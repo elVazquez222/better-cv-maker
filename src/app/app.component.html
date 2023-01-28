@@ -11,7 +11,7 @@
 {{test}}
     <div class="input-type-container">
       <h4>Professional Info</h4>
-      <span class="hint"> add skills seperated by space</span>
+      <span class="hint"> add skills seperated by comma</span>
       <div class="input-group">
         <div *ngFor="let input of professionalInfoInputs">
           <div class="input-row">
@@ -54,7 +54,7 @@
         </div>
         <br />
         <div>
-          <label for="skillList">add applied skills seperated by space</label>
+          <label for="skillList">add applied skills seperated by comma</label>
           <br />
           <input type="text" name="skillList" class="skillList"
             (change)="updateSkills($event.target.value, workExperience.title, workExperience.time)"
