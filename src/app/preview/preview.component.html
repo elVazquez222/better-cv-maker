@@ -1,3 +1,51 @@
 <div class="preview">
-  preview works!
+  <header>
+    <div class="headerMain">
+      <div class="location">
+        located in
+        {{availableAt.value}} <br />
+        <span *ngIf="wouldMoveTo.value !== ''">reday to move to</span> <br />
+        {{wouldMoveTo.value}}
+      </div>
+      <div class="jobTitle">
+        <h1>{{jobTitle.value}}</h1>
+        <span>{{jobSubTitle.value}}</span>
+        <span *ngIf="experienceInYears.value !== ''" class="experinceTime">{{experienceInYears.value}} yrs</span>
+      </div>
+      <div class="availability">
+        available from <br />
+        {{availableFrom.value}} <br />
+        or by arrangement
+      </div>
+    </div>
+    <div class="languages">
+      <img src="https://cdn-icons-png.flaticon.com/512/1246/1246297.png" />
+      <img *ngIf="languages.value.includes('de')" src="https://flagicons.lipis.dev/flags/4x3/de.svg" />
+      <img *ngIf="languages.value.includes('us') || languages.value.includes('en')" src="https://flagicons.lipis.dev/flags/4x3/us.svg" />
+      <img *ngIf="languages.value.includes('es')" src="https://flagicons.lipis.dev/flags/4x3/es.svg" />
+      <img *ngIf="languages.value.includes('fr')" src="https://flagicons.lipis.dev/flags/4x3/fr.svg" />
+    </div>
+  </header>
+  <main>
+    <div class="skillsOverview">
+      <div class="experiencedSkills">
+        <h4>Hands On Work Experince Skills</h4>
+        <div class="skillBlock">
+          <span class="skillChip" *ngFor="let skill of skillsWithExperience">
+            {{skill}}
+          </span>
+        </div>
+      </div>
+      <div class="furtherSkills">
+        <h4>Also In Touch With</h4>
+        <div class="skillBlock">
+          <span class="skillChip" *ngFor="let skill of furtherSkills">
+            {{skill}}
+          </span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
 </div>

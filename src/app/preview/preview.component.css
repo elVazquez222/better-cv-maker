@@ -1,9 +1,88 @@
 .preview {
   width: 684px;
   height: 976px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 
+h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+header {
+
+  /* background: rgb(5, 43, 86); */
+  border: 1px solid rgb(5, 43, 86);
+  color: goldenrod;
+  border-radius: 10px;
+  padding: 2rem 1rem 1rem 1rem;
+}
+
+.headerMain {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.jobTitle {
+  /* color: white; */
+  position: relative;
+  text-align: center;
+}
+
+.experinceTime {
+  position: absolute;
+  right: -25px;
+  top: 5px;
+  font-size: 13px;
+}
+
+.languages {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  margin-top: 1rem;
+}
+
+.languages > img {
+  max-height: 14px;
+}
+
+.availability, .location {
+  font-size: 12px;
+  text-align: center;
+  color: rgb(5, 43, 86);
+}
+
+.skillsOverview {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.experiencedSkills, .furtherSkills {
+  flex: 2;
+  text-align: center;
+}
+
+.furtherSkills {
+  flex: 1;
+}
+
+.skillBlock {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.skillChip {
+  border-radius: 10px;
+  border: 1px dashed goldenrod;
+  padding: 2px 4px;
+  font-size: 14px;
+}
 
 @media print {
   .preview {

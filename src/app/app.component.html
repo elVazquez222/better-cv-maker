@@ -8,10 +8,10 @@
 
 <div class="container">
   <div class="inputs no-print">
-
+{{test}}
     <div class="input-type-container">
       <h4>Professional Info</h4>
-      <span class="hint"><i class="fa-solid fa-circle-info"></i>add skills seperated by space</span>
+      <span class="hint"> add skills seperated by space</span>
       <div class="input-group">
         <div *ngFor="let input of professionalInfoInputs">
           <div class="input-row">
@@ -66,7 +66,14 @@
       <button class="addWorkExpBtn" (click)="addWorkExperienceEntry()">+</button>
     </div>
   </div>
-  <div><app-preview></app-preview></div>
+  <div>
+    <app-preview
+      [personalInfo]="personalInfoInputs"
+      [professionalInfo]="professionalInfoInputs"
+      [workExperienceEntries]="workExperienceEntries"
+    >
+    </app-preview>
+  </div>
 </div>
 
 
