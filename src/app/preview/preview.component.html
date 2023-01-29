@@ -2,9 +2,9 @@
   <header>
     <div class="headerMain">
       <div class="location">
-        currently in
+        Currently in
         {{availableAt.value}} <br />
-        <span *ngIf="wouldMoveTo.value !== ''">would work in:</span> <br />
+        <span *ngIf="wouldMoveTo.value !== ''">Would work in:</span> <br />
         <span class="hilightedTextColor">{{wouldMoveTo.value}}</span>
       </div>
       <div class="jobTitle">
@@ -58,7 +58,7 @@
           </div>
         </div>
         <div class="workExpTimeAndLocation">
-          <span class="workExpLcation">{{exp.location}}</span> <br /> <span class="workExpTime">{{exp.time}}</span>
+          <span class="workExpLocation">{{exp.location}}</span> <br /> <span class="workExpTime">{{exp.time}}</span>
         </div>
         <div class="workExpDescription">
           {{exp.description}}
