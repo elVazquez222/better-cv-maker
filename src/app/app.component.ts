@@ -16,7 +16,7 @@ export class AppComponent {
     { label: "LinkedIn", type: "text", value: "https://www.linkedin.com/in/jos%C3%A9-benjamin-m-j-guerrero-vazquez-30369b14b/" },
     { label: "mail", type: "text", value: "jbmj@outlook.de" },
     { label: "Website", type: "text", value: "" },
-    { label: "Hobbies", type: "text", value: "Cooking - espacially Spanish cuisine, Travelling - e.g. hop on the car with friends and explore the shores of Europe, Sports - e.g. play football or soccer with friends and go to the gym as a contrast to the desk job, Go out - Have good times with friends going to bars / restaurants / escape rooms etc, Netflix - Brooklyn99 / The Walking Dead / Travellers / The Big Bang Theory / ...  " },
+    { label: "Hobbies", type: "text", value: "👨‍🍳 Cooking - espacially Spanish cuisine, 🚀 Travelling - e.g. hop on the car with friends and explore the shores of Europe, 🏈 Sports - e.g. play football or soccer with friends and go to the gym as a contrast to the desk job, 🥂 Go out - Have good times with friends going to bars / restaurants / escape rooms etc, 🍿 Netflix - Brooklyn99 / The Walking Dead / Travellers / The Big Bang Theory / ...  " },
   ];
   professionalInfoInputs: Array<TextInput> = [
     { label: "Job Title", type: "text", value: "Web-Developer" },

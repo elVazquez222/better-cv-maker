@@ -227,7 +227,7 @@ footer {
   box-shadow: 2px 1px 6px rgba(100, 100, 100, .6);
   font-size: 13px;
 }
-.hobbies, .contact {
+.hobbies, .contact, .languageSkills {
   padding-bottom: 2rem!important;
 }
 .hobbies li:last-of-type {
@@ -240,8 +240,8 @@ footer {
   z-index: 2;
 }
 .contactPicture {
-  top: 360px;
-  left: 70px;
+  top: 555px;
+  left: 270px;
   position: relative;
 
   z-index: 3;
@@ -270,6 +270,9 @@ footer {
 }
 
 .hobbies {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .contact {
@@ -311,6 +314,23 @@ footer {
 }
 .personalInfoName > img {
   max-height: 80px;
+}
+
+.languageSkills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  top: 370px;
+  left: 63px;
+}
+.languageSkills img {
+  height: 20px;
+}
+.languageSkillElement {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 @media print {

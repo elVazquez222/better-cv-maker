@@ -78,9 +78,7 @@
     <div class="personalInfo">
       <section class="hobbies">
         <span class="personalInfo header">Hobbies:</span>
-        <ul>
-          <li *ngFor="let hobby of hobbies">{{hobby}}</li>
-        </ul>
+        <span *ngFor="let hobby of hobbies">{{hobby}}</span>
       </section>
       <!-- <section class="weaknesses">
         <span class="personalInfo header">Weaknesses:</span>
@@ -103,6 +101,27 @@
           <img src="https://cdn-icons-png.flaticon.com/128/552/552486.png" />
           {{mail.value}}
         </div>
+      </section>
+      <section class="languageSkills">
+        <div class="personalInfo header">Languages:</div>
+        <div class="languageSkillElement">
+          <img *ngIf="languages.value.includes('de')" src="https://flagicons.lipis.dev/flags/4x3/de.svg" />
+          <span>German - C2</span>
+        </div>
+        <div class="languageSkillElement">
+          <img *ngIf="languages.value.includes('us') || languages.value.includes('en')" src="https://flagicons.lipis.dev/flags/4x3/us.svg" />
+          <span>English - C1</span>
+        </div>
+        <div class="languageSkillElement">
+          <img *ngIf="languages.value.includes('fr')" src="https://flagicons.lipis.dev/flags/4x3/fr.svg" />
+          <span>French - B2</span>
+        </div>
+        <div class="languageSkillElement">
+          <img *ngIf="languages.value.includes('es')" src="https://flagicons.lipis.dev/flags/4x3/es.svg" />
+          <span>Spanish - B2</span>
+          <br />
+        </div>
+        <span style="font-size:12px" >(Estoy tratando de mejorarlo cada día. ^^ )</span>
       </section>
       <!-- todo: make editable -->
       <section class="contactPicture">
