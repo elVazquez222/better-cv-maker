@@ -57,6 +57,12 @@ export class AppComponent {
     this.workExperienceEntries.push({ title: '', description: '', location: '', time: '', skills: '' })
   }
 
+  resetItAll() {
+    this.personalInfoInputs = [];
+    this.professionalInfoInputs = [];
+    this.workExperienceEntries = [{ title: '', description: '', location: '', time: '', skills: '' }];
+  }
+
   addInput(): void {
     // this.inputs = [...this.inputs, this.newTextInput];
   }

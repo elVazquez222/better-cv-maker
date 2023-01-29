@@ -4,6 +4,23 @@
   --label-font-size: 12px;
 }
 
+button {
+  margin: 1rem 0;
+  background: white;
+  border: none;
+  box-shadow: 1px 1px 5px rgb(37, 26, 103);
+  cursor: pointer;
+  padding: 5px 8px;
+}
+button:hover {
+  box-shadow: 0px 0px 6px rgb(70, 49, 190);
+}
+button:active {
+  box-shadow: -2px -2px 9px rgb(23, 14, 75);
+  background: rgba(95, 74, 218, .7);
+  color: white;
+}
+
 h4 {
   margin: 0;
   padding: 0;

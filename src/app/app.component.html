@@ -8,7 +8,7 @@
 
 <div class="container">
   <div class="inputs no-print">
-{{test}}
+    <button (click)="resetItAll()">reset</button>
     <div class="input-type-container">
       <h4>Professional Info</h4>
       <span class="hint"> add skills seperated by comma</span>
@@ -63,7 +63,7 @@
         <br />
         <hr />
       </div>
-      <button class="addWorkExpBtn" (click)="addWorkExperienceEntry()">+</button>
+      <button class="addWorkExpBtn" (click)="addWorkExperienceEntry()">Add work experience +</button>
     </div>
   </div>
   <div>
