@@ -117,11 +117,12 @@ header {
 
 .workExperienceElement {
   position: relative;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   padding-bottom: 1rem;
   /* background: #0c4444d1; */
   /* color: white; */
   box-shadow: 1px 0px 14px rgba(0,0,0,.3);
+  box-shadow: 6px 3px 11px rgb(0 0 0 / 15%);
   padding: 12px 8px;
   font-size: 12px;
   min-height: 131px;
@@ -140,6 +141,7 @@ header {
   font-size: 16px;
   box-shadow: -4px 2px 10px rgb(184 134 11 / 10%);
   box-shadow: -4px 4px 10px rgb(11 147 184 / 5%);
+  box-shadow: -2px 3px 5px rgb(141 147 184 / 25%);
   border-radius: 14px;
   margin-bottom: 10px
 }
