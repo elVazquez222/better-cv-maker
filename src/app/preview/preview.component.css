@@ -176,14 +176,17 @@ header {
 .workExpTime {
   writing-mode: vertical-rl;
   text-orientation: mixed;
+  transform: rotate(192deg);
+
   position: absolute;
   left: -45px;
+  top: 58px;
+
   font-size: 1rem;;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: monospace;
   color: dimgray;
-  top: 56px;
   opacity: .23;
-  transform: rotate(-23deg);
 }
 
 .workExpTitle{
