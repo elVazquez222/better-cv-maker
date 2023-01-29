@@ -63,13 +63,54 @@
         <div class="workExpDescription">
           {{exp.description}}
         </div>
-
       </div>
     </div>
   </main>
 
   <footer>
+    <div class="personalInfoName">
+      <img src="https://hungry-varahamihira-22bbb1.netlify.app/static/media/profilpic.91d6d514.png" />
+      <h4>
+        {{name.value}}
+      </h4>
+    </div>
 
+    <div class="personalInfo">
+      <section class="hobbies">
+        <span class="personalInfo header">Hobbies:</span>
+        <ul>
+          <li *ngFor="let hobby of hobbies">{{hobby}}</li>
+        </ul>
+      </section>
+      <!-- <section class="weaknesses">
+        <span class="personalInfo header">Weaknesses:</span>
+      </section> -->
+      <section class="contact">
+        <div class="personalInfo header">Contact:</div>
+        <div class="contactInfoElement">
+          <img src="https://cdn-icons-png.flaticon.com/128/1057/1057118.png" />
+          {{address.value}}
+        </div>
+        <div class="contactInfoElement">
+          <img src="https://cdn-icons-png.flaticon.com/128/724/724664.png" />
+          {{phone.value}}
+        </div>
+        <div class="contactInfoElement">
+          <img src="https://cdn-icons-png.flaticon.com/128/1377/1377213.png" />
+          {{linkedIn.value}}
+        </div>
+        <div class="contactInfoElement">
+          <img src="https://cdn-icons-png.flaticon.com/128/552/552486.png" />
+          {{mail.value}}
+        </div>
+      </section>
+      <!-- todo: make editable -->
+      <section class="contactPicture">
+        <img src="https://hungry-varahamihira-22bbb1.netlify.app/static/media/apache_cut.3e707293.png" alt="Bild mit Apache"/>
+        <div class="pictureText1">Ready To Take Off?</div>
+        <div class="pictureText2">Get in touch! :)</div>
+      </section>
+    </div>
   </footer>
 
 

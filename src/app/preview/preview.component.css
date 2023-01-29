@@ -207,6 +207,112 @@ header {
   padding-top: .6px;
 }
 
+footer {
+  margin: 5rem 0;
+}
+
+.personalInfo {
+  display: flex;
+  position: relative;
+}
+
+.personalInfo img {
+  max-height: 250px;;
+}
+
+.personalInfo section {
+  padding: 1rem;
+  position: absolute;
+  max-width: 50%;
+  box-shadow: 2px 1px 6px rgba(100, 100, 100, .6);
+  font-size: 13px;
+}
+.hobbies, .contact {
+  padding-bottom: 2rem!important;
+}
+.hobbies li:last-of-type {
+  padding-right: 3rem;
+}
+.contact {
+  right: 0;
+  top: 200px;
+  background: rgba(255,255,255,.78);
+  z-index: 2;
+}
+.contactPicture {
+  top: 360px;
+  left: 70px;
+  position: relative;
+
+  z-index: 3;
+  background: rgba(255,255,255,.78);
+}
+.pictureText1 {
+  position: absolute;
+  top: 60px;
+  right: -50px;
+  font-size: 22px;
+  box-shadow: 1px 1px 5px rgba(144, 125,855, .6);
+  padding: 5px;
+}
+.pictureText2 {
+  position: absolute;
+  top: 90px;
+  right: -140px;
+  font-size: 18px;
+  box-shadow: 1px 1px 5px rgba(144, 125, 135, .6);
+  padding: 5px;
+}
+
+.personalInfo.header {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.hobbies {
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact img {
+  max-height: 16px;;
+}
+
+.contactInfoElement {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.personalInfoName {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly;
+}
+.personalInfoName > h4 {
+  font-size: 24px;
+}
+.personalInfoName::after {
+  content: '';
+  position: absolute;
+  height: 20px;
+  width: 100%;
+  background: goldenrod;
+  opacity: .4;
+  top: 46px;
+  left: 20%;
+  border-radius: 20px;
+  z-index: -1;
+}
+.personalInfoName > img {
+  max-height: 80px;
+}
+
 @media print {
   .preview {
     border: none;

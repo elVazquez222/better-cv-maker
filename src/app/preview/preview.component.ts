@@ -25,6 +25,15 @@ export class PreviewComponent implements OnInit {
   // work experience
   workExperience = null;
 
+  // personal info
+  name = null;
+  address = null;
+  phone = null;
+  linkedIn = null;
+  mail = null;
+  website = null;
+  hobbies = null;
+
   ngOnInit() {
     this.jobTitle = this.professionalInfo.filter(info => info.label === "Job Title")[0];
     this.jobSubTitle = this.professionalInfo.filter(info => info.label === "Job Subtitle")[0];
@@ -40,6 +49,13 @@ export class PreviewComponent implements OnInit {
       return { ...entry, skills: entry.skills.split(",") }
     });
 
+    this.name = this.personalInfo.filter(info => info.label === "Name")[0];
+    this.address = this.personalInfo.filter(info => info.label === "Address")[0];
+    this.phone = this.personalInfo.filter(info => info.label === "Phone")[0];
+    this.linkedIn = this.personalInfo.filter(info => info.label === "LinkedIn")[0];
+    this.mail = this.personalInfo.filter(info => info.label === "mail")[0];
+    this.website = this.personalInfo.filter(info => info.label === "Website")[0];
+    this.hobbies = this.personalInfo.filter(info => info.label === "Hobbies")[0].value.split(",");
 
   }
 }
