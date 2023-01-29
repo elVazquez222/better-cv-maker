@@ -1,7 +1,8 @@
 .preview {
+  margin: 0 auto;
   width: 684px;
   height: 976px;
-  font-family:  'Montserrat', sans-serif;;
+  font-family:  'Montserrat', sans-serif;
 }
 
 h1 {
