@@ -26,7 +26,7 @@ export class AppComponent {
     { label: "Availability (place)", type: "text", value: "Germany" },
     { label: "Would move to", type: "text", value: "Germany, Spain" },
     { label: "Skills With Experience", type: "text", value: "React.js, Vue.js, TypeScript, JavaScript, REST, SASS, Mobx, Docker, git, PHP, MySQL, CSS3, SCRUM, Kanban, Jira, CI/CD, MVC" },
-    { label: "Further Skills", type: "text", value: "Angular, Python, ReactNative, UI/UX, Flutter, AI/ML, GraphQL, ASP.NET" },
+    { label: "Further Skills", type: "text", value: "Angular, Python, ReactNative, UI/UX, Flutter, AI/ML, GraphQL, ASP.NET, Express, Node.js" },
     { label: "Languages", type: "text", value: "de us es fr" },
   ]
   workExperienceEntries: Array<WorkExperienceEntry> = [
