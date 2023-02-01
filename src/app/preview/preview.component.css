@@ -17,13 +17,6 @@ h4 {
 }
 
 header {
-  /* background: dimgrey; */
-  /* background: rgb(105 24 44); */
-  /* border: 1px solid antiquewhite;
-  color: antiquewhite;
-  border-radius: 10px;
-  padding: 2rem 1rem 1rem 1rem; */
-
   border-bottom: 1px solid dimgrey;
   border-top: 1px solid dimgrey;
   color: dimgrey;
@@ -119,9 +112,6 @@ header {
   position: relative;
   margin-top: 2rem;
   padding-bottom: 1rem;
-  /* background: #0c4444d1; */
-  /* color: white; */
-  box-shadow: 1px 0px 14px rgba(0,0,0,.3);
   box-shadow: 6px 3px 11px rgb(0 0 0 / 15%);
   padding: 12px 8px;
   font-size: 12px;
@@ -139,20 +129,19 @@ header {
   border-bottom: none;
   padding: 8px;
   font-size: 16px;
-  box-shadow: -4px 2px 10px rgb(184 134 11 / 10%);
-  box-shadow: -4px 4px 10px rgb(11 147 184 / 5%);
   box-shadow: -2px 3px 5px rgb(141 147 184 / 25%);
   border-radius: 14px;
   margin-bottom: 10px
 }
 
 .workExperienceHeader > div > span {
+  display: flex;
+  align-items: center;
+
   border: 1px solid #c5bda8;
   border-radius: 50px;
   padding: 0px 4px;
   font-size: 9px;
-  display: flex;
-  align-items: center;
   height: 14px;
 }
 .workExperienceHeader::after {
@@ -160,16 +149,15 @@ header {
   top: 0;
   left: -2rem;
   content: '';
-  /* height: 2px; */
   width: 100%;
-  box-shadow: -2px 1px 5px goldenrod;
   box-shadow: -2px 1px 5px dimgrey;
 }
 
 .workExpLocation {
-  font-size: 12pt;
   display: flex;
   justify-content: center;
+
+  font-size: 12pt;
   color: dimgray;
   font-style: italic;
   margin-top: 1.5rem;
@@ -185,7 +173,6 @@ header {
   top: 58px;
 
   font-size: 1rem;;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-family: monospace;
   color: dimgray;
   opacity: .23;
@@ -198,10 +185,6 @@ header {
 .workExpDescription {
   font-size: 11pt;
   line-height: 1.6;
-  padding-top: 5px;
-  padding-right: 5px;
-  font-family: 'Rajdhani', sans-serif;
-  font-family: 'Nanum Myeongjo', serif;
   font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif;
   padding: 1rem;
   padding-top: .6px;
@@ -251,6 +234,7 @@ footer {
   position: absolute;
   top: 60px;
   right: -50px;
+
   font-size: 22px;
   box-shadow: 1px 1px 5px rgba(144, 125,855, .6);
   padding: 5px;
@@ -259,6 +243,7 @@ footer {
   position: absolute;
   top: 90px;
   right: -140px;
+
   font-size: 18px;
   box-shadow: 1px 1px 5px rgba(144, 125, 135, .6);
   padding: 5px;
@@ -321,6 +306,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   gap: 10px;
+
   top: 370px;
   left: 63px;
 }
